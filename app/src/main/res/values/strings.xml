@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">ChamadoTI</string>
-    <string name="chamati">CHAMA T.I.</string>
+    <string name="app_name">CHAMA T.I.</string>
     <string name="abrirchamado">Abrir Chamado</string>
     <string name="gerenciarchamado">Gerenciar Chamado</string>
     <string name="ti">T.I.</string>

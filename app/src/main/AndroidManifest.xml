@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GCTI"
         tools:targetApi="31">
+
+        <activity android:name=".CreateTicketActivity" />
+        <activity android:name=".ConsultTicketActivity" />
+        <activity android:name=".ITDepartmentActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

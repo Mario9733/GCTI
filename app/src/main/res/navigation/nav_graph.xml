@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.gcti.MainFragment"
+        android:label="GCTI"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/createTicketFragment"
+        android:name="com.example.gcti.CreateTicketFragment"
+        android:label="Abrir Chamado"
+        tools:layout="@layout/fragment_create_ticket" />
+
+    <fragment
+        android:id="@+id/consultTicketFragment"
+        android:name="com.example.gcti.ConsultTicketFragment"
+        android:label="Consultar Chamado"
+        tools:layout="@layout/fragment_consult_ticket" />
+
+    <fragment
+        android:id="@+id/itDepartmentFragment"
+        android:name="com.example.gcti.ITDepartmentFragment"
+        android:label="T.I."
+        tools:layout="@layout/fragment_it_department" />
+</navigation>
