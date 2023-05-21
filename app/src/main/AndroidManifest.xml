@@ -12,9 +12,14 @@
         android:theme="@style/Theme.GCTI"
         tools:targetApi="31">
 
-        <activity android:name=".CreateTicketActivity" />
-        <activity android:name=".ConsultTicketActivity" />
-        <activity android:name=".ITDepartmentActivity" />
+        <activity android:name=".create.CreateTicketActivity" />
+        <activity android:name=".create.CreateTicket2" />
+        <activity android:name=".create.CreateTicket3" />
+
+        <activity android:name=".consult.ConsultTicketActivity" />
+
+        <activity android:name=".ti.ITDepartmentActivity" />
+
 
         <activity
             android:name=".MainActivity"

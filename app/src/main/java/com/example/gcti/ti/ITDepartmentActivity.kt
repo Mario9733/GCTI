@@ -1,11 +1,12 @@
-package com.example.gcti
+package com.example.gcti.ti
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gcti.R
 
-class ConsultTicketActivity : AppCompatActivity() {
+class ITDepartmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_consult_ticket)
+        setContentView(R.layout.activity_it_department)
     }
 }

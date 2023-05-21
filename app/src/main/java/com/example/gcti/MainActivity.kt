@@ -3,13 +3,36 @@ package com.example.gcti
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gcti.consult.ConsultTicketActivity
+import com.example.gcti.create.CreateTicketActivity
+import com.example.gcti.ti.ITDepartmentActivity
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
+//
+//        listViewTickets = findViewById(R.id.btnConsultTicket)
+//        val btncontinueTicket: Button = findViewById(R.id.btnCreateTicket)
+//        btncontinueTicket.setOnClickListener()
+//        {
+//            val intent = Intent(this, CreateTicketActivity::class.java)
+//            startActivity(intent)
+//        }
+        // Exemplo de lista de chamados (substitua por seus próprios dados)
+//        val chamadoList = listOf("Chamado 1", "Chamado 2", "Chamado 3")
+
+//        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, chamadoList)
+//        listViewTickets.adapter = adapter
+
+//        listViewTickets.setOnItemClickListener {
+//            val ticket = chamadoList[position]
+//            val intent = Intent(this, TicketDetailsActivity::class.java)
+//            intent.putExtra("ticket", ticket)
+//            startActivity(intent)
+
+        }
 
     fun openCreateTicketActivity(view: android.view.View) {
         val intent = Intent(this, CreateTicketActivity::class.java)
@@ -25,4 +48,5 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ITDepartmentActivity::class.java)
         startActivity(intent)
     }
+
 }

@@ -13,19 +13,31 @@
 
     <fragment
         android:id="@+id/createTicketFragment"
-        android:name="com.example.gcti.CreateTicketFragment"
+        android:name="com.example.gcti.create.CreateTicketFragment"
         android:label="Abrir Chamado"
         tools:layout="@layout/fragment_create_ticket" />
 
     <fragment
+        android:id="@+id/createTicket2"
+        android:name="com.example.gcti.create.CreateTicket2Fragment"
+        android:label="Abrir Chamado2"
+        tools:layout="@layout/fragment_create2" />
+
+    <fragment
         android:id="@+id/consultTicketFragment"
-        android:name="com.example.gcti.ConsultTicketFragment"
+        android:name="com.example.gcti.consult.ConsultTicketFragment"
         android:label="Consultar Chamado"
         tools:layout="@layout/fragment_consult_ticket" />
 
     <fragment
+        android:id="@+id/consultTicketFragment2"
+        android:name="com.example.gcti.consult.ConsultTicketFragment"
+        android:label="Consultar Chamado2"
+        tools:layout="@layout/fragment_consult_ticket2" />
+
+    <fragment
         android:id="@+id/itDepartmentFragment"
-        android:name="com.example.gcti.ITDepartmentFragment"
+        android:name="com.example.gcti.ti.ITDepartmentFragment"
         android:label="T.I."
         tools:layout="@layout/fragment_it_department" />
 </navigation>

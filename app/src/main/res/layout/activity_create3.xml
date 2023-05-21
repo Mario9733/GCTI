@@ -1,11 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_gradient"
-    tools:context=".consult.ConsultTicketActivity">
-
+    android:background="@drawable/bg_gradient">
 
     <TextView
         android:id="@+id/tituloti"
@@ -17,35 +15,35 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>
 
-
-    <EditText
-        android:id="@+id/editTextProtocolo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tituloti"
-        android:layout_centerHorizontal="true"
-        android:hint="Número de Protocolo"
-        android:minHeight="48dp" />
-
     <Button
-        android:id="@+id/buttonConsultar"
+        android:id="@+id/buttonSelecionarImagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Selecionar Imagem"
+        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/editTextProtocolo"
-        android:text="Consultar"
-        />
+        android:layout_below="@id/tituloti"/>
 
-    <TextView
-        android:id="@+id/textViewResultado"
+    <ImageView
+        android:id="@+id/imageViewImagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/buttonConsultar"
-        android:layout_marginTop="16dp" />
+        android:layout_below="@id/buttonSelecionarImagem"/>
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Salvar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewImagem"/>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/navHostFragmentconsult"
+        android:id="@+id/navHostFragmentcreate2"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

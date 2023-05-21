@@ -1,16 +1,17 @@
-package com.example.gcti
+package com.example.gcti.ti
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.gcti.R
 
-class ConsultTicketFragment : Fragment() {
+class ITDepartmentFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_consult_ticket, container, false)
+        return inflater.inflate(R.layout.fragment_it_department, container, false)
     }
 }
