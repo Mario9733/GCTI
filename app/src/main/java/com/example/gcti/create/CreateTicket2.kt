@@ -5,7 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.gcti.R.*
+import com.example.gcti.R.id
+import com.example.gcti.R.layout
 
 class CreateTicket2 : AppCompatActivity() {
     private lateinit var editTextDescricao: EditText
@@ -15,7 +16,7 @@ class CreateTicket2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_create2)
 
-        editTextDescricao = findViewById(id.descricao)
+        editTextDescricao = findViewById(id.et_problem_description)
         buttonContinuar2 = findViewById(id.btncontinuechamado2)
 
         buttonContinuar2.setOnClickListener {

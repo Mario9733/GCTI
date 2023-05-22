@@ -1,6 +1,5 @@
 package com.example.gcti.create
 
-import android.app.Activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -10,15 +9,14 @@ import androidx.room.Room
 import com.example.gcti.AppDatabase
 import com.example.gcti.ChamadoDao
 import com.example.gcti.ChamadoEntity
+import com.example.gcti.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-import com.example.gcti.R
-import com.google.android.gms.cast.framework.media.ImagePicker
-import com.github.dhaval2404.imagepicker.ImagePicker
+
 
 
 
@@ -38,15 +36,9 @@ class CreateTicket3 : AppCompatActivity() {
         buttonSalvar = findViewById(R.id.buttonSalvar)
 
         buttonSelecionarImagem.setOnClickListener {
-            ImagePicker.with(this)
-                .galleryOnly()
-                .start { resultCode, data ->
-                    if (resultCode == Activity.RESULT_OK) {
-                        val fileUri = data?.data
-                        imageViewImagem.setImageURI(fileUri)
-                    }
-                }
+// usar api camera para bater foto da imagem necessária
         }
+
 
         buttonSalvar.setOnClickListener {
             val database = Room.databaseBuilder(

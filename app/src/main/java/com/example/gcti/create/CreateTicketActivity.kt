@@ -1,5 +1,4 @@
 package com.example.gcti.create
-
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -27,7 +26,7 @@ class CreateTicketActivity : AppCompatActivity() {
             val setor = editTextSetor.text.toString()
             val telefone = editTextTelefone.text.toString()
 
-            // Navegar para a próxima tela (AbrirChamado2Activity) passando os dados inseridos
+            // Navegar para a próxima tela (CreateTicket2) passando os dados inseridos
             val intent = Intent(this, CreateTicket2::class.java)
             intent.putExtra("nome", nome)
             intent.putExtra("setor", setor)
