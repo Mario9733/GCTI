@@ -43,6 +43,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/buttonConsultar"
         android:layout_marginTop="16dp" />
+<!--falta deixar vermelho-->
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navHostFragmentconsult"
