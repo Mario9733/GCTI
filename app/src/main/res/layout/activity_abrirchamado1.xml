@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@drawable/bg_gradient"
-    tools:context=".create.CreateTicketActivity">
+    tools:context=".abrirchamado.CreateTicketActivity">
 
     <TextView
         android:id="@+id/tituloti"

@@ -16,7 +16,7 @@
         android:layout_marginTop="100dp"/>
 
     <Button
-        android:id="@+id/buttonSelecionarImagem"
+        android:id="@+id/btnSelectImagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selecionar Imagem"
@@ -31,7 +31,7 @@
         android:layout_marginTop="25dp"
         android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/buttonSelecionarImagem"/>
+        android:layout_below="@id/btnSelectImagem"/>
 
     <Button
         android:id="@+id/buttonSalvar"

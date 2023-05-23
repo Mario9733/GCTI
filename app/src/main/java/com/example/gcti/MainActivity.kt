@@ -3,8 +3,8 @@ package com.example.gcti
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gcti.abrirchamado.AbrirChamado
 import com.example.gcti.consult.ConsultTicketActivity
-import com.example.gcti.create.CreateTicketActivity
 import com.example.gcti.ti.ITDepartmentActivity
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     fun openCreateTicketActivity(view: android.view.View) {
-        val intent = Intent(this, CreateTicketActivity::class.java)
+        val intent = Intent(this, AbrirChamado::class.java)
         startActivity(intent)
     }
 

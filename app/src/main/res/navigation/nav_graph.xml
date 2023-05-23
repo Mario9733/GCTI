@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/createTicketFragment"
-        android:name="com.example.gcti.create.CreateTicketFragment"
+        android:name="com.example.gcti.abrirchamado.CreateTicketFragment"
         android:label="Abrir Chamado"
-        tools:layout="@layout/fragment_create_ticket" >
+        tools:layout="@layout/fragment_abrirchamado1" >
         <action
             android:id="@+id/action_createTicketFragment_to_createTicket2"
             app:destination="@id/createTicket2" />
@@ -23,9 +23,9 @@
 
     <fragment
         android:id="@+id/createTicket2"
-        android:name="com.example.gcti.create.CreateTicket2Fragment"
+        android:name="com.example.gcti.abrirchamado.CreateTicket2Fragment"
         android:label="Abrir Chamado2"
-        tools:layout="@layout/fragment_create2" >
+        tools:layout="@layout/fragment_abrirchamado2" >
         <action
             android:id="@+id/action_createTicket2_to_createTicket3"
             app:destination="@id/createTicket3" />
@@ -33,9 +33,9 @@
 
     <fragment
         android:id="@+id/createTicket3"
-        android:name="com.example.gcti.create.CreateTicket3Fragment"
+        android:name="com.example.gcti.abrirchamado.CreateTicket3Fragment"
         android:label="Abrir Chamado3"
-        tools:layout="@layout/fragment_create3" />
+        tools:layout="@layout/fragment_abrirchamado3" />
 
 
     <fragment
