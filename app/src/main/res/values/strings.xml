@@ -6,10 +6,10 @@
     <string name="def">Defeito</string>
     <string name="descricao">Descreva seu defeito</string>
     <string name="continuar">Continue</string>
+    <string name="Menu_Principal">Voltar ao Menu</string>
     <string name="selectimage">Adicionar Fotos</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="invalid_credentials">CREDENCIAIS INVÁLIDAS</string>
-
+    <string name="selecionar_imagem">Selecionar Imagem</string>
 
 </resources>

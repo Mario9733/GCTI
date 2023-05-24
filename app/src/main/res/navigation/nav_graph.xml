@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/createTicketFragment"
-        android:name="com.example.gcti.abrirchamado.CreateTicketFragment"
+        android:name="com.example.gcti.abrirchamado.AbrirChamado1Fragment"
         android:label="Abrir Chamado"
         tools:layout="@layout/fragment_abrirchamado1" >
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/createTicket2"
-        android:name="com.example.gcti.abrirchamado.CreateTicket2Fragment"
+        android:name="com.example.gcti.abrirchamado.AbrirChamado2Fragment"
         android:label="Abrir Chamado2"
         tools:layout="@layout/fragment_abrirchamado2" >
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/createTicket3"
-        android:name="com.example.gcti.abrirchamado.CreateTicket3Fragment"
+        android:name="com.example.gcti.abrirchamado.AbrirChamado3Fragment"
         android:label="Abrir Chamado3"
         tools:layout="@layout/fragment_abrirchamado3" />
 
@@ -52,7 +52,8 @@
 
     <fragment
         android:id="@+id/itDepartmentFragment"
-        android:name="com.example.gcti.ti.ITDepartmentFragment"
+        android:name="com.example.gcti.ti.ITDepartment1Fragment"
         android:label="T.I."
         tools:layout="@layout/fragment_it_department" />
+
 </navigation>

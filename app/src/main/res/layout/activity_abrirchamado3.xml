@@ -19,28 +19,23 @@
         android:id="@+id/btnSelectImagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selecionar Imagem"
-        android:layout_marginTop="25dp"
+        android:text="@string/selecionar_imagem"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
+        android:textSize="35sp"
         android:layout_below="@id/tituloti"/>
 
-    <ImageView
-        android:id="@+id/imageViewImagem"
+
+
+    <TextView
+        android:id="@+id/textViewgerarprotocolo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/btnSelectImagem"/>
+        android:layout_below="@id/btnSelectImagem"
+        android:textColor="#FF1100"
+        android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/buttonSalvar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Salvar"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageViewImagem"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navHostFragmentcreate3"

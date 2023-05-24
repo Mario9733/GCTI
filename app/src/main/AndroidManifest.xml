@@ -21,10 +21,13 @@
         <activity android:name=".abrirchamado.AbrirChamado" />
         <activity android:name=".abrirchamado.AbrirChamado2"/>
         <activity android:name=".abrirchamado.AbrirChamado3" />
+        <activity android:name=".abrirchamado.ProtocoloActivity" />
+
 
         <activity android:name=".consult.ConsultTicketActivity" />
-        <activity android:name=".ti.ITDepartmentActivity" />
-        <activity android:name=".ti.ITDepartment2" />
+        <activity android:name=".consult.ResultadoConsultActivity" />
+        <activity android:name=".ti.ITDepartmento" />
+        <activity android:name=".ti.ITDepartmento2" />
 
 
         <activity

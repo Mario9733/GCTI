@@ -2,6 +2,7 @@ package com.example.gcti.abrirchamado
 
 import android.Manifest
 import android.content.ContentValues
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
@@ -60,6 +61,7 @@ class AbrirChamado3 : AppCompatActivity() {
             }
         }
 
+
         // Inicialize o banco de dados
         db = AppDatabase.getInstance(this)
 
@@ -113,7 +115,12 @@ class AbrirChamado3 : AppCompatActivity() {
             Toast.LENGTH_LONG
         ).show()
 
+        val intent = Intent(this@AbrirChamado3, ProtocoloActivity::class.java)
+        intent.putExtra("protocolo", protocolo)
+        startActivity(intent)
+
         finish()
+
     }
 
     private fun generateProtocolo(): String {

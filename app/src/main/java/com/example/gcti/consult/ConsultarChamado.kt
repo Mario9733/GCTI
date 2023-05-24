@@ -6,11 +6,17 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gcti.R
+import com.example.gcti.db.AppDatabase
+import com.example.gcti.db.Chamado
+import com.example.gcti.db.ChamadoDao
+import kotlinx.coroutines.runBlocking
 
 class ConsultTicketActivity : AppCompatActivity() {
     private lateinit var editTextProtocolo: EditText
     private lateinit var buttonConsultar: Button
     private lateinit var textViewResultado: TextView
+    private lateinit var chamadoDao: ChamadoDao
+    private lateinit var db: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +26,12 @@ class ConsultTicketActivity : AppCompatActivity() {
         buttonConsultar = findViewById(R.id.buttonConsultar)
         textViewResultado = findViewById(R.id.textViewResultado)
 
+        // Inicialize o banco de dados
+        db = AppDatabase.getInstance(this)
+
+        // Inicialize o chamadoDao com o DAO do banco de dados
+        chamadoDao = db.chamadoDao()
+
         buttonConsultar.setOnClickListener {
             val protocolo = editTextProtocolo.text.toString()
             // Chame o método de consulta do chamado passando o número do protocolo
@@ -28,14 +40,27 @@ class ConsultTicketActivity : AppCompatActivity() {
     }
 
     private fun consultarChamado(protocolo: String) {
-        // Implemente a lógica de consulta do chamado no banco de dados
-        // Aqui você pode usar a classe que representa o banco de dados e realizar a consulta pelo número de protocolo
-
-        // Exemplo de resultado
-        val resultado = "Chamado não localizado"
-        // Se o chamado for encontrado, atribua as informações correspondentes à variável resultado
-
-        textViewResultado.text = resultado
+        // Consulte o chamado no banco de dados
+        runBlocking {
+            val chamado = chamadoDao.getChamadoByProtocolo(protocolo)
+            exibirResultado(chamado)
+        }
     }
-}
 
+    private fun exibirResultado(chamado: Chamado?) {
+        if (chamado != null) {
+            val resultado = "Número de protocolo: ${chamado.protocolo}\n" +
+                    "Nome: ${chamado.nome}\n" +
+                    "Setor: ${chamado.setor}\n" +
+                    "Telefone: ${chamado.telefone}\n" +
+                    "Descrição: ${chamado.descricao}\n" //+
+                  //  "Status: ${chamado.status}"
+
+            val intent = ResultadoConsultActivity.newIntent(this, resultado)
+            startActivity(intent)
+        } else {
+            textViewResultado.text = "Chamado não localizado"
+        }
+    }
+
+}

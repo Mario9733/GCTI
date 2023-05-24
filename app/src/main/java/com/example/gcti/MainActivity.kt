@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gcti.abrirchamado.AbrirChamado
 import com.example.gcti.consult.ConsultTicketActivity
-import com.example.gcti.ti.ITDepartmentActivity
+import com.example.gcti.ti.ITDepartmento
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openITDepartmentActivity(view: android.view.View) {
-        val intent = Intent(this, ITDepartmentActivity::class.java)
+        val intent = Intent(this, ITDepartmento::class.java)
         startActivity(intent)
     }
 
